@@ -1,8 +1,11 @@
-import math
-print ("enter the value of factorise")
-a=input("enter first digit")
-b=input("enter second digit")
-c=input("enter third digit")
-x1=(-(b)+math.sqrt(b*b-4*a*c))/(2*a)
-x2=(-(b)-math.sqrt(b*b-4*a*c))/(2*a)
-print "the value of positivce x",x1, "the value of negative x",x2
+while 1:
+    x=int(raw_input("please enter an iteger:"))
+    if x<0:
+        x=0
+        print 'negative changed to zero'
+    elif x==0:
+        print 'zero'
+    elif x==1:
+        print 'single'
+    else:
+        print 'more'
