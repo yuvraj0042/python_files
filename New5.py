@@ -6,4 +6,13 @@ def ask_ok (prompt, retries=4, complaint='yes or no, please!'):
         retries = retries -1
         if retries<0: raise IOError, 'refusenik user'
         print complaint
+i=5
+def f(arg=i):
+    print arg
+i=6
+f()
+z=ask_ok('really quit6???')
+
+if z==False:
+    print "bad"
         
